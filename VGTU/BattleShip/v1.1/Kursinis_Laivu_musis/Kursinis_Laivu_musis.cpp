@@ -68,8 +68,6 @@ public:
 		Move_the_ships(1);
 		Move_the_ships(1);
 		Move_the_ships(1);
-		Print_Map();
-		_getch();
 		while(1) {
 			Move_aim_player(5, 5);
 			Move_aim_enemy(rand()%7+2, rand() % 7 + 2);
