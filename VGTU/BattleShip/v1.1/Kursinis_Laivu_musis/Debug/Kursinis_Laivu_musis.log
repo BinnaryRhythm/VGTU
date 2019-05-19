@@ -1,0 +1,7 @@
+﻿  Kursinis_Laivu_musis.cpp
+c:\users\dziugas\source\repos\kursinis_laivu_musis\kursinis_laivu_musis\kursinis_laivu_musis.cpp(580): warning C4018: '<': signed/unsigned mismatch
+c:\users\dziugas\source\repos\kursinis_laivu_musis\kursinis_laivu_musis\kursinis_laivu_musis.cpp(582): warning C4018: '<': signed/unsigned mismatch
+c:\users\dziugas\source\repos\kursinis_laivu_musis\kursinis_laivu_musis\kursinis_laivu_musis.cpp(605): warning C4018: '<': signed/unsigned mismatch
+c:\users\dziugas\source\repos\kursinis_laivu_musis\kursinis_laivu_musis\kursinis_laivu_musis.cpp(607): warning C4018: '<': signed/unsigned mismatch
+c:\users\dziugas\source\repos\kursinis_laivu_musis\kursinis_laivu_musis\kursinis_laivu_musis.cpp(655): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Kursinis_Laivu_musis.vcxproj -> C:\Users\Dziugas\source\repos\Kursinis_Laivu_musis\Debug\Kursinis_Laivu_musis.exe
