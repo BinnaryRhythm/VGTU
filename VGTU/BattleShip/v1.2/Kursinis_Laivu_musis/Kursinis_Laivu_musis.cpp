@@ -13,10 +13,6 @@ private:
 
 	bool HorVer = 0; // Horizontal/Vertical
 	bool CantShot = 0;
-	bool hit_again = 0;
-	
-	char axis = 0;
-	bool left_alive = false;
 
 	int Hit = 0;
 
@@ -41,7 +37,6 @@ private:
 
 public:
 	void Meniu() {
-		//Start_Art();
 		_getch();
 		Print_Map();
 		Place_ships_enemy(4);
@@ -83,25 +78,6 @@ public:
 		_getch();
 		endwin(); //end curses mode
 	}
-	/*
-	void Start_Art() {
-		initscr();
-		int r = 100, g = 100, b = 100;
-
-		for (int i = 0; i < 20; i++) {
-			for (int j = 0; j < 40; j++) {
-
-				r++; g++, b++;
-				Colors(r, g, b);
-				attron(COLOR_PAIR(10));
-				mvprintw(i, j, "#");
-				Remove_color();
-			}
-		}
-		refresh();
-	}
-	*/
-
 
 	void Print_Map() {
 		initscr();
@@ -351,9 +327,8 @@ public:
 		temp_cordinates_to_add_to_vector.clear();
 	}
 
-	void Colors(int r = 0, int g = 0, int b = 0) {
+	void Colors() {
 		start_color();
-		init_color(10, r, g, b);
 		init_color(1, 0, 200, 400);				//Dark Blue.
 		init_color(2, 0, 500, 600);				//Light Blue.
 		init_color(3, 1000, 300, 300);			//Red.
@@ -362,7 +337,6 @@ public:
 		init_color(6, 400, 0, 50);				//Dark Red.
 		init_color(8, 700, 10, 0);				//Dark orange.
 												//****************
-		init_pair(10, 10, 0);
 		init_pair(1, 2, 1);						//For map 1
 		init_pair(2, 1, 2);						//For map 2
 		init_pair(3, 3, 5);						//Can't place ship.
@@ -384,7 +358,6 @@ public:
 		attroff(COLOR_PAIR(7));
 		attroff(COLOR_PAIR(8));
 		attroff(COLOR_PAIR(9));
-		attroff(COLOR_PAIR(10));
 	}
 	void Color_old_shoots(int i, int j, int Map[][12]) {
 		if (Map[i][j] > 2) {
