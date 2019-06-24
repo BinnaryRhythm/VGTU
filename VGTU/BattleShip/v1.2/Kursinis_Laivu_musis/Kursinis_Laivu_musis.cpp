@@ -603,7 +603,7 @@ public:
 			}
 		if (player == 0) {
 			if (Map_player[y][x] == 2) cout<< "klaida" << endl;
-			Map_player[y][x] += 2;
+			else Map_player[y][x] += 2;
 		}
 
 	}
