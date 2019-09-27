@@ -1,0 +1,3 @@
+﻿  turing_meniu.cpp
+C:\Users\BinaryRhythm\source\repos\turing\turing\turing_meniu.cpp(121,21): warning C4018:  '<': signed/unsigned mismatch
+  turing.vcxproj -> C:\Users\BinaryRhythm\source\repos\turing\Debug\turing.exe
