@@ -10,6 +10,7 @@ upgrades:
 fixes:
  -
  -crash when DUOM file doesn't exist.
+ 
  -upload when task running.
 
 
